@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: beige;
+}
+
+body {
+    background-color: #0c0c0c;
+    font-family: 'PT sans', sans-serif;
+}
+
+
+header {
+    margin: 2rem;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .nav .menu {
+    display: flex;
+}
+
+header .nav .menu li {
+    list-style: none;
+    margin: 10px;
+}
+
+header .nav .menu li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .nav .menu li a:hover {
+    padding: 5px 10px;
+    background: rgb(80, 173, 106);
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.logo-tiuits {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-tiuits a {
+    text-decoration: none;
+}
+
+.hijos {
+    width: 4rem;
+}
+
+.title-n {
+    position: absolute;
+    top: 15px;
+    left: 53px;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 0 5px beige, 0 0 15px beige, 0 0 30px beige, 0 0 40px beige;
+    animation: parpadear 2s infinite backwards;
+}
+
+@keyframes parpadear {
+    to {
+        color: rgb(156, 156, 156);
+        text-shadow: none;
+    }
+}
+
+/* main */
+/* banner */
+
+main .banner {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    min-height: 100vh;
+    border-radius: 2rem;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(./assets/banner-img.png) no-repeat;
+    background-position: 100%;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+main .banner .banner-information {
+    margin: 10rem;
+}
+
+main .banner .banner-information h3 {
+    font-size: 6rem;
+}
+
+main .banner .banner-information span {
+    font-size: 2.5rem;
+    color: rgb(80, 173, 106);
+    padding: 0;
+}
+
+main .banner .banner-information p {
+    font-size: 1rem;
+    color: rgb(146, 146, 141);
+    line-height: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background: rgb(80, 173, 106);
+    padding: .9rem 3.5rem;
+    text-decoration: none;
+    opacity: 0.80;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    opacity: 1;
+    transition: all 0.5s ease
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+footer .container-redes a img {
+    width: 3rem;
+    margin: 1rem;
+    opacity: 0.60;
+}
+
+footer .container-redes a img:hover {
+    opacity: 1;
+    transition: all 0.5s ease;
+    width:3.5rem;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    header .nav {
+        flex-direction: column;
+    }
+
+
+}
+
+/*estilos del header*/
